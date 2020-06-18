@@ -1,0 +1,50 @@
+body {
+    font-size: 16px;
+}
+
+
+/** HEADER **/
+
+#header-nav {
+    background-color: lightgrey;
+    border-radius: 0;
+    border: 0;
+}
+
+.navbar-brand h1 {
+    /* Brand name */
+    font-size: 1.5em;
+    color: #222;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: darkgray;
+}
+
+#main-heading {
+    margin-bottom: 35px;
+}
+
+#content-title p {
+    font-size: 2em;
+}
+
+#content-container {
+    background-color: darkgray;
+    border-radius: 0;
+    border: 0;
+}
