@@ -3,7 +3,7 @@
 }
 
 ul > li > .nav-link {
-  color: #c58fd4;
+  color: #341d3a;
 }
 
 ul > li > .nav-link:hover {
@@ -11,37 +11,56 @@ ul > li > .nav-link:hover {
 }
 
 .nav-pills .nav-link.active {
-  background-color: #c58fd4;
+  background-color: #ac7bb9;
 }
 
-.form-cont {
-  padding-top: 30px;
-  padding-left: 25%;
-  padding-right: 25%;
+.name{
+  margin-top: auto;
+  font-weight: 650;
 }
 
-.form-data {
-  border-style: hidden;
-  border-radius: 25px;
-  padding: 15px;
-  box-shadow: 15px 15px 20px gray;
-  transition: 0.5s;
-  background-color: #c58fd4;
-}
-input {
-  opacity: 0.75;
+a{
+  text-decoration: none;
+  color: #341d3a;
 }
 
-.form-data:hover {
-  box-shadow: 0px 25px 20px gray;
+a:hover {
+  color: rgb(117, 67, 115);
 }
-.getbtn {
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 15px;
+.carousel{
+  height: 600px;
+  box-shadow: inset;
+}
+.carousel .carousel-item {
+  height: 600px;
+  box-shadow: inset;
 }
 
-body {
-  background-color: #8ec5fc;
-  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+.border {
+    border: 1px solid #dee2e600!important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+ h2{
+   font-weight: 750;
+   font-size:2cm;
+ }
+ .carousel .carousel-indicators button {
+   background-color: rgb(247, 146, 146);
+   width: 70px;
+   height: 2px;
+   opacity: 0.7;
+}
+.carousel .carousel-indicators button.active {
+  background-color: rgb(240, 15, 7);
+}
+
+.about{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
