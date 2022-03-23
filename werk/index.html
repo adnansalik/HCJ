@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taikutsuna</title>
-  <link rel="icon" href="https://img.icons8.com/nolan/64/Lord.png" type="image/x-icon" />
+  <link rel="icon" href="/images/logo.png" type="image/x-icon" />
   <!-- BootStrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
   <!-- CSS -->
   <link rel="stylesheet" href="/css/style.css" />
+  <!-- Chatbot -->
+  <script src="https://chat.valentabpo.onereach.ai/lib/richWebChat.umd.min.js"></script>
+  <link rel="stylesheet" href="https://chat.valentabpo.onereach.ai/lib/richWebChat.css" />
 </head>
 
 <body>
@@ -44,7 +47,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#order-online">
               <h4>Shop</h4>
             </a>
           </li>
@@ -120,10 +123,203 @@
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="/js/script.js"></script>
+  <div>
+    <h1 id="order-online" class="about">Order Online</h1>
+  </div>
+  <div class="container d-flex">
+    <div class="order-navlist col w-25 flex-fill">
+      <h3>
+        <a id="brunch" href="#brunch" onclick="togg(this)">
+          Brunch
+        </a>
+      </h3>
+      <h3>
+        <a id="dinner" href="#dinner" onclick="togg(this)">
+          Dinner
+        </a>
+      </h3>
+      <h3>
+        <a id="sushi" href="#sushi" onclick="togg(this)">
+          Sushi Rolls
+        </a>
+      </h3>
+    </div>
+
+    <div id="brunch" class="col w-75 flex-fill brunch cart-menu--shown">
+    <div class="container d-flex">
+      <div class="card flex-fill mx-3">
+        <img src="/images/brunch1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Nuka Zune Maki</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+          </p>
+          <div class="d-flex flex-column">
+            <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card flex-fill mx-3">
+        <img src="/images/brunch2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sake Maki</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+          </p>
+          <div class="d-flex flex-column">
+            <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card flex-fill mx-3">
+        <img src="/images/brunch3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bento Box</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.
+          </p>
+          <div class="d-flex flex-column">
+            <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+    </div>
+
+    <div id="dinner" class="col w-75 flex-fill dinner cart-menu--hidden">
+      <div class="container d-flex">
+        <div class="card flex-fill mx-3">
+          <img src="/images/dinner1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kakegori</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <div class="d-flex flex-column">
+              <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="card flex-fill mx-3">
+          <img src="/images/dinner2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Japanese Pasta</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <div class="d-flex flex-column">
+              <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="card flex-fill mx-3">
+          <img src="/images/dinner3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sake Sashami</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <div class="d-flex flex-column">
+              <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sushi" class="col w-75 flex-fill sushi cart-menu--hidden">
+      <div class="container d-flex">
+        <div class="card flex-fill mx-3">
+          <img src="/images/sushi1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sashami</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <div class="d-flex flex-column">
+              <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="card flex-fill mx-3">
+          <img src="/images/sushi2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Japanese Sushi</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <div class="d-flex flex-column">
+              <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="card flex-fill mx-3">
+          <img src="/images/sushi3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Maguro Sushi</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <div class="d-flex flex-column">
+              <a href="#" class="btn btn-outline-danger">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">© 2021 Company, Inc</p>
+  
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <img src="/images/logo.png" height="50px" alt="">
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+    </footer>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <div id="rwc"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var RWC = richWebChat.default
+        var app = new RWC({
+          container: '#rwc', // DOM element selector where chat will be inserted
+          chatUrl: 'https://chat.valentabpo.onereach.ai/y2L3j9GsTDK1yvKBgWbpFw/0b4imp7', // url of your chat. required
+          autoExpandDelay: 300000,
+          position: 'bottom-right',
+          inviteMessage: "Ohayo!",
+          inviteButton: "",
+          inviteImage: undefined,
+          showCloseIcon: true,
+          inviteTimeout: 3000,
+          allowChangeChatWindowSize: false,
+          allowDrag: true,
+          widgetColor: '#B71C1C',
+          allowStartNewConversation: false,
+          thumbLogo: undefined,
+          animation: 'pulse', // 'pulse', 'ring', 'zoom',
+          appearance: {
+            blurredBackground: false
+          },
+          pageData: {
+            fname: 'foo'
+          }
+        })
+      });
+    </script>
 </body>
 
 </html>
