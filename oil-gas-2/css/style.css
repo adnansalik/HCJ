@@ -1,0 +1,66 @@
+.top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #8f0b0b;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: larger;
+  font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f84b07;
+}
+
+.blob {
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.carousel-item div {
+  width: 250px;
+  position: absolute;
+  top: 150px;
+  left: 350px;
+  font-size: xx-large;
+  color: white;
+}
+
+.head {
+  font-size: 45px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+}
+
+#desc {
+  font-size: large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.bname {
+  font-size: 35px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #303335;
+}
+
+.bname:hover {
+  color: #303335;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #f84b07;
+  width: 70px;
+  height: 2px;
+}
