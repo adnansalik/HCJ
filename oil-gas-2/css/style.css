@@ -35,7 +35,7 @@
 }
 
 .carousel-item div {
-  width: 250px;
+  width: 300px;
   position: absolute;
   top: 150px;
   left: 300px;
@@ -44,9 +44,11 @@
 }
 
 .head {
-  font-size: 45px;
+  font-size: 40px;
   font-family: "Courier New", Courier, monospace;
-  font-weight: 500;
+  padding: 0;
+  margin: 0%;
+  font-weight: 600;
 }
 
 #desc {
