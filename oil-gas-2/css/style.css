@@ -5,7 +5,7 @@
 }
 
 .carousel-item {
-  height: 100vh;
+  height: 80vh;
 }
 
 .navbar-light .navbar-nav .nav-link.active,
@@ -29,15 +29,16 @@
 }
 
 .blob {
-  margin-top: 50px;
-  margin-left: 40px;
+  margin-top: 100px;
+  margin-left: 120px;
+  opacity: 0.7;
 }
 
 .carousel-item div {
   width: 250px;
   position: absolute;
   top: 150px;
-  left: 350px;
+  left: 300px;
   font-size: xx-large;
   color: white;
 }
@@ -69,4 +70,15 @@
   background-color: #f84b07;
   width: 70px;
   height: 2px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  width: 83.5%;
+  font-size: large;
+}
+.socials:hover {
+  color: #f84b07;
 }
