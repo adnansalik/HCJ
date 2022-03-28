@@ -39,22 +39,21 @@ video {
 }
 
 .socials {
-  margin-top: 400px;
-  width: 65px;
-  float: left;
+  width: 50px;
   border-radius: 50px;
-  opacity: 0.7;
 }
 
 .socials ul {
-  padding: 5px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .socials ul li {
-  font-size: 30px;
+  font-size: 20px;
+  transition: 0.1s;
 }
 .socials ul li:hover {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .bi-instagram {
