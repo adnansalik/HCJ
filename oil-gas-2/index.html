@@ -22,11 +22,13 @@
   <script src="https://kit.fontawesome.com/46497ae2df.js" crossorigin="anonymous"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Chatbot  -->
+  <script src="https://chat.valentabpo.onereach.ai/lib/richWebChat.umd.min.js"></script>
+  <link rel="stylesheet" href="https://chat.valentabpo.onereach.ai/lib/richWebChat.css" />
 </head>
 
 <body>
-<!-- Header -->
-
   <!-- Navbar -->
   <div id="carouselExampleCaptions" class="carousel" data-bs-ride="carousel" data-bs-interval="4500" data-bs-pause="false">
       
@@ -163,10 +165,38 @@
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fa-brands fa-instagram"></i></a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fa-brands fa-twitter"></i></a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fa-brands fa-linkedin"></i></a></li>
-      </ul>
+      </ul>    
     </footer>
   </div>
-    <script src="./js/script.js"></script>
+  <div id="rwc"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var RWC = richWebChat.default
+      var app = new RWC({
+        container: '#rwc', // DOM element selector where chat will be inserted
+        chatUrl: 'https://chat.valentabpo.onereach.ai/y2L3j9GsTDK1yvKBgWbpFw/0dd8jgb', // url of your chat. required
+        autoExpandDelay: 10000,
+        position: 'bottom-right',
+        inviteMessage: "",
+        inviteButton: "",
+        inviteImage: undefined,
+        showCloseIcon: false,
+        inviteTimeout: 5000,
+        allowChangeChatWindowSize: true,
+        allowDrag: true,
+        widgetColor: '#607D8B',
+        allowStartNewConversation: true,
+        thumbLogo: 'https://www.designfreelogoonline.com/wp-content/uploads/2019/10/000726-Petroleum-04.png',
+        animation: 'pulse', // 'pulse', 'ring', 'zoom',
+        appearance: {
+          blurredBackground: false
+        },
+        pageData: {
+          fname: 'foo'
+        }
+      })
+    });
+  </script>
 </body>
 
 </html>

@@ -130,3 +130,12 @@
   box-shadow: 4px 10px 12px #a7a7a7;
   cursor: pointer;
 }
+
+.end a{
+  position: absolute;
+  /* padding: 5px; */
+  text-decoration: none;
+  right: 25px;
+  bottom: 10px;;
+
+}
