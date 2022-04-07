@@ -1,3 +1,10 @@
+.nav-cont {
+  position: relative;
+  max-width: fit-content !important;
+  padding: 0px 0px !important;
+  width: 100% !important;
+  margin: 0 auto;
+}
 .top {
   position: absolute;
   top: 0;
@@ -79,4 +86,12 @@
 }
 .socials:hover {
   color: #f84b07;
+}
+
+.foot-cont{
+  position: relative;
+  max-width:none !important;
+  padding: 0px 100px !important;
+  width: 100% !important;
+  margin: 0 auto;
 }
