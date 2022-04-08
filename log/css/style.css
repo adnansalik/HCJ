@@ -139,3 +139,16 @@
   bottom: 10px;;
 
 }
+
+.rwc-embed__chat{
+  background-color: rgba(252, 252, 234, 0.922) !important;
+}
+
+.message-bubble{
+  background-color: rgb(249, 239, 239) !important;
+}
+
+.message-bubble__content .message-bubble__text{
+  color: rgb(100, 98, 95) !important;
+  font-weight: bold;
+}
