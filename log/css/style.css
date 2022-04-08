@@ -141,7 +141,7 @@
 }
 
 .rwc-embed__chat{
-  background-color: rgba(252, 252, 234, 0.922) !important;
+  background-color: #fcfceaeb !important;
 }
 
 .message-bubble{
@@ -151,4 +151,8 @@
 .message-bubble__content .message-bubble__text{
   color: rgb(100, 98, 95) !important;
   font-weight: bold;
+}
+
+.radio-group{
+  background-color:#fcfceaeb;
 }
