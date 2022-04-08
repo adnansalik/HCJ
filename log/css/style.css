@@ -156,3 +156,28 @@
 .radio-group{
   background-color:#f9efef !important;
 }
+
+.rwc-button--filled.rwc-button--primary {
+  background: #FF9393 !important;;
+  color: black !important;
+  font-weight: bold !important;
+}
+
+.rwc-button{
+  border: 1px solid #FF9393 !important;
+}
+
+.rwc-button .rwc-button--outlined .rwc-button--primary{
+  color: black !important;
+}
+
+.slider-wrapper {
+  background-color: #f9efef !important;
+}
+.rwc-button--outlined.rwc-button--primary{
+  color: #000000 !important;
+}
+
+.rwc-button--outlined.rwc-button--primary:hover{
+  background: #FF9393!important;
+}
