@@ -145,7 +145,7 @@
 }
 
 .message-bubble{
-  background-color: rgb(249, 239, 239) !important;
+  background-color: #f9efef !important;
 }
 
 .message-bubble__content .message-bubble__text{
@@ -154,5 +154,5 @@
 }
 
 .radio-group{
-  background-color:#fcfceaeb;
+  background-color:#f9efef !important;
 }
