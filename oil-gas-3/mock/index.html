@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="Show image for 5 seconds" onclick="show()"><br><br>
+    <div id="myDiv" style="display:none"><img id="myImage"
+            src="https://files.orsolaas.api.onereach.ai/public/81b9e903-15fa-48dc-9a5e-59483738c4a5/Team_Khizar/bot-icons/bot.gif">
+    </div><br>
+
+    <script type="text/javascript">
+
+        function show() {
+            document.getElementById("myDiv").style.display = "block";
+            setTimeout("hide()", 5000);  // 5 seconds
+        }
+
+        function hide() {
+            document.getElementById("myDiv").style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -67,3 +67,17 @@ video {
 .bi-linkedin {
   color: rgb(149, 213, 255);
 }
+
+.rwc-embed__thumb img{
+  max-height:min-content !important;
+  max-width: min-content !important;
+  height:90px;
+}
+
+.rwc-embed__thumb{
+  background-color: rgba(240, 248, 255, 0) !important;
+}
+
+.rwc-embed__thumb span.rwc-embed__thumb-unread{
+  top:-10px !important;
+}
